@@ -2,8 +2,14 @@
 {% load static %}
 {% block title %}Customer Registration{% endblock title %}
 {% block main-content %}
+<style>
+    .main{
+    min-height : 78vh;
+    }
+</style>
 <div class="container">
     <div class="row my-3">
+        <div class="main">
         <div class="col-sm-6 offset-sm-3">
             <h3>Customer Registration</h3>
             <hr>
@@ -31,6 +37,7 @@
                 {% endif %}
             </form>
         </div>
+            </div>
     </div>
 </div>
 {% endblock main-content %}

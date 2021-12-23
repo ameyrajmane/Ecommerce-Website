@@ -123,7 +123,7 @@ def remove_cart(request):
         }
         return JsonResponse(data)
 
-
+@login_required
 def buy_now(request):
     return render(request, 'app/buynow.html')
 
@@ -195,9 +195,9 @@ def payment_done(request):
 
 @method_decorator(login_required, name='dispatch')
 class ProfileView(View):
-    def get(self, reuqest):
+    def get(self, request):
         form = CustomerProfileForm()
-        return render(reuqest, 'app/profile.html', {'form': form, 'active': 'btn-primary'})
+        return render(request, 'app/profile.html', {'form': form, 'active': 'btn-primary'})
 
     def post(self, request):
         form = CustomerProfileForm(request.POST)
