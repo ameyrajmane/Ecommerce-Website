@@ -135,6 +135,9 @@ def buy_now(request):
 @login_required
 def address(request):
     add = Customer.objects.filter(user=request.user)
+    # zip_code = request.GET['zipcode']
+    # c = Customer.objects.get(Q(zipcode=zip_code) & Q(user=request.user))
+    # c.delete()
     return render(request, 'app/address.html', {'add': add, 'active': 'btn-primary'})
 
 @login_required
