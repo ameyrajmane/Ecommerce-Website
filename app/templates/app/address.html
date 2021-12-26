@@ -2,7 +2,9 @@
 {% load static %}
 {% block title %}Address{% endblock title %}
 {% block main-content %}
+</style>
 <div class="container my-5">
+    <div class="main">
     <div class="row">
         <h3>Welcome <span class="text-capitalize">{{request.user}}</span></h3>
         <div class="col-sm-2 border-end">
@@ -31,5 +33,6 @@
             </div>
         </div>
     </div>
+        </div>
 </div>
 {% endblock main-content %}
