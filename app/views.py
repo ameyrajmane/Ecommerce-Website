@@ -181,7 +181,7 @@ def checkout(request):
         for p in cart_product:
             tempamount = (p.quantity * p.product.discounted_price)
             amount += tempamount
-        totalamount = amount + shipping_amount
+    totalamount = amount + shipping_amount
 
     return render(request, 'app/checkout.html', {'add': add, 'totalamount': totalamount, 'cart_items': cart_items})
 
