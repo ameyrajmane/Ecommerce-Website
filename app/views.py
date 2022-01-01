@@ -156,6 +156,8 @@ def mobile(request, data=None):
     return render(request, 'app/mobile.html', {'mobiles': mobiles})
 
 
+
+
 class CustomerRegistrationView(View):
     def get(self, request):
         form = CustomerRegistrationForm()
