@@ -2,7 +2,14 @@
 {% load static %}
 {% block title %}Product Detail{% endblock title %}
 {% block main-content %}
+<style>
+    .main{
+        min-height: 73vh;
+    }
+</style>
+
 <div class="container my-5">
+    <div class="main">
     <div class="row">
         <div class="col-sm-6 text-center align-self-center">
             <img src="{{product.product_image.url}}" alt="" class="img-fluid img-thumbnail">
@@ -46,5 +53,6 @@
             </ul>
         </div>
     </div>
+</div>
 </div>
 {% endblock main-content %}
