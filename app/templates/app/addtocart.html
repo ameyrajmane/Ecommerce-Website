@@ -2,7 +2,13 @@
 {% load static %}
 {% block title %}Cart{% endblock title %}
 {% block main-content %}
+<style>
+    .main{
+        min-height: 73vh;
+    }
+</style>
 <div class="container my-5">
+    <div class="main">
     <div class="row">
         <h1 class="text-center mb-5">Shopping Cart</h1>
         <div class="col-sm-8">
@@ -74,5 +80,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 {% endblock main-content %}
