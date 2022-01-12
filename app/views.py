@@ -7,14 +7,11 @@ from django.db.models import Q
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-import razorpay
-from Amazon.settings import RAZORPAY_API_KEY, RAZORPAY_API_SECRET_KEY
-
 
 # def home(request):
 #  return render(request, 'app/home.html')
 
-client = razorpay.Client(auth=("RAZORPAY_API_KEY", "RAZORPAY_API_SECRET_KEY"))
+
 
 
 class ProductView(View):
