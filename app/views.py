@@ -13,7 +13,6 @@ from django.utils.decorators import method_decorator
 
 
 
-
 class ProductView(View):
     def get(self, request):
         topwears = Product.objects.filter(category='TW')
