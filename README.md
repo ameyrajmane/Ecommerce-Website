@@ -1,5 +1,44 @@
 
-# Ecommerce-Website
+# 🛒 Ecommerce-Website
+A feature-rich, scalable, and secure eCommerce platform built using **Python**, **Django**, and **SQL**. This project simulates a real-world online shopping experience with functionalities like product listings, cart management, user authentication, payment simulation, and admin control.
+
+## 📌 Features
+
+### 👤 User Features
+- User registration and login (with email verification)
+- Product search, filter, and sort
+- Add to cart / Remove from cart
+- Checkout process and order history
+- Wishlist and product reviews
+
+### 🛍️ Admin Features
+- Admin dashboard with product, category, and user management
+- Order tracking and delivery status updates
+- Sales analytics and inventory management
+
+### 🔐 Security
+- Secure password hashing
+- CSRF protection
+- SQL injection protection using Django ORM
+
+---
+
+## 🧰 Tech Stack
+
+| Layer         | Technology             |
+| ------------- | ---------------------- |
+| Backend       | Python, Django         |
+| Database      | SQLite / PostgreSQL    |
+| Frontend      | HTML, CSS, Bootstrap   |
+| Authentication| Django's auth system   |
+| Deployment    | Gunicorn, Nginx (Optional) |
+| Payment       | Razorpay (Demo)        |
+
+---
+
+## 🏗️ Project Structure
+
+
 ![Screenshot (161)_edited](https://user-images.githubusercontent.com/72036529/148331625-3eba186d-4a6d-48cb-9f61-92e8278245cc.jpg)
 
 
